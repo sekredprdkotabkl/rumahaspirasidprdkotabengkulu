@@ -314,32 +314,24 @@
 				<br>
 				<form id="myForm" onsubmit="handleFormSubmit()">
 					<div id="form_alerts"></div>
-					<div class="form-group mb-3">
-						<label for="nama" class="form-label">Nama Siswa</label>
-						<input type="text" id="nama" name="nama" class="form-control" placeholder="Masukan nama siswa" required>
-            </div>
-
-            <div class="form-group mb-3">
-            <label for="kelas" class="form-label">Kelas</label>
-						<select type="text" id="kelas" name="kelas" class="form-control" required>
-              <option>---Pilih Kelas---</option>
-              <option>X IPA 1</option>
-              <option>X IPA 2</option>
-              <option>X IPS 1</option>
-              <option>X IPS 2</option>
-              <option>X IPS 3</option>
-						</select>
-            </div>
-
-            <div class="form-group mb-3">
-            <label for="subjek" class="form-label">Mata Pelajaran</label>
-						<select type="text" id="subjek" name="subjek" class="form-control" required>
-            <option>---Pilih Mata Pelajaran---</option>
-            <option>Bahasa Inggris</option>
-            <option>Sastra Inggris</option>
-						</select>
-            </div>
-
+           <form name="bilik-aspirasi">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Alamat Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Nomor HP</label>
+                  <input type="phone" class="form-control" id="phone" aria-describedby="phone" name="nomorhp"> 
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Aspirasi</label>
+                    <textarea class="form-control" id="pesan" rows="5" name="aspirasi"></textarea>
+                  </div>
+					
 						<div class="form-group">
 							<label for="uploadFile">Upload File</label>
 							<input type="file" class="form-control" name="file" id="file">
@@ -393,6 +385,7 @@
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
+
     <section id="appointment" class="appointment section">
 
       <!-- Section Title -->
